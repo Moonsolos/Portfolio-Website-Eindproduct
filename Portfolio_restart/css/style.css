@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap');
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(210, 85, 85);
+    color: black;
+}
+
+header {
+    background-image: url("../img/header.jpeg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h4 {
+    font-size: 1.20em;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(170, 62, 62);
+    position: sticky;
+    top: 0;
+}
+
+nav a:hover {
+    background-color: rgb(122, 25, 25);
+}
+
+a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.white {
+    width: 40vw;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.whiteblock {
+    background-color: white;
+    display: flex;
+    margin: 30px;
+}
+
+img {
+    object-fit: fill;
+    width: 30vw;
+    align-self: flex-start;
+}
+
+footer {
+    background-color:rgb(170, 62, 62);
+    font-size: 0.8em;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botnav a:hover {
+    background-color: black;
+}
+
+span {
+    color: white;
+    margin: 30px;
+    
+}
+
+.link {
+    background-color: rgb(122, 25, 25);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+main {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.form-element{
+    display: flex;
+    justify-content: space-between;
+}
+
+label, input, select, textarea {
+    flex: 1;
+}
+
+.form {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    .whiteblock {
+        flex-direction: column;
+    }
+
+    .white {
+        width: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
